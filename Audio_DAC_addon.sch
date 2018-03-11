@@ -1,0 +1,363 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "DE0-Nano-SoC LED hat"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR01
+U 1 1 5A26D573
+P 5850 7800
+F 0 "#PWR01" H 5850 7550 50  0001 C CNN
+F 1 "GND" H 5850 7650 50  0000 C CNN
+F 2 "" H 5850 7800 50  0001 C CNN
+F 3 "" H 5850 7800 50  0001 C CNN
+	1    5850 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x10 J16
+U 1 1 5A26EC1E
+P 3150 4750
+F 0 "J16" H 3150 5250 50  0000 C CNN
+F 1 "Conn_01x10" H 3150 4150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 3150 4750 50  0001 C CNN
+F 3 "" H 3150 4750 50  0001 C CNN
+	1    3150 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x08 J17
+U 1 1 5A26EEB6
+P 3150 5950
+F 0 "J17" H 3150 6350 50  0000 C CNN
+F 1 "Conn_01x08" H 3150 5450 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08_Pitch2.54mm" H 3150 5950 50  0001 C CNN
+F 3 "" H 3150 5950 50  0001 C CNN
+	1    3150 5950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5A26FE1E
+P 3450 5350
+F 0 "#PWR02" H 3450 5100 50  0001 C CNN
+F 1 "GND" H 3450 5200 50  0000 C CNN
+F 2 "" H 3450 5350 50  0001 C CNN
+F 3 "" H 3450 5350 50  0001 C CNN
+	1    3450 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5A2B3131
+P 3700 2150
+F 0 "C1" H 3725 2250 50  0000 L CNN
+F 1 "0.1" H 3725 2050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402_NoSilk" H 3738 2000 50  0001 C CNN
+F 3 "" H 3700 2150 50  0001 C CNN
+	1    3700 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5A2B3CAD
+P 3950 2150
+F 0 "C2" H 3975 2250 50  0000 L CNN
+F 1 "0.1" H 3975 2050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402_NoSilk" H 3988 2000 50  0001 C CNN
+F 3 "" H 3950 2150 50  0001 C CNN
+	1    3950 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5A2B3D84
+P 4200 2150
+F 0 "C3" H 4225 2250 50  0000 L CNN
+F 1 "0.1" H 4225 2050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402_NoSilk" H 4238 2000 50  0001 C CNN
+F 3 "" H 4200 2150 50  0001 C CNN
+	1    4200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 5A2B4AB4
+P 3700 2350
+F 0 "#PWR03" H 3700 2100 50  0001 C CNN
+F 1 "GND" H 3700 2200 50  0000 C CNN
+F 2 "" H 3700 2350 50  0001 C CNN
+F 3 "" H 3700 2350 50  0001 C CNN
+	1    3700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5A2B4C97
+P 3950 2350
+F 0 "#PWR04" H 3950 2100 50  0001 C CNN
+F 1 "GND" H 3950 2200 50  0000 C CNN
+F 2 "" H 3950 2350 50  0001 C CNN
+F 3 "" H 3950 2350 50  0001 C CNN
+	1    3950 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5A2B4D53
+P 4200 2350
+F 0 "#PWR05" H 4200 2100 50  0001 C CNN
+F 1 "GND" H 4200 2200 50  0000 C CNN
+F 2 "" H 4200 2350 50  0001 C CNN
+F 3 "" H 4200 2350 50  0001 C CNN
+	1    4200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR06
+U 1 1 5A2B57CF
+P 3700 1950
+F 0 "#PWR06" H 3700 1800 50  0001 C CNN
+F 1 "VCC" H 3700 2100 50  0000 C CNN
+F 2 "" H 3700 1950 50  0001 C CNN
+F 3 "" H 3700 1950 50  0001 C CNN
+	1    3700 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR07
+U 1 1 5A2B5B14
+P 3950 1950
+F 0 "#PWR07" H 3950 1800 50  0001 C CNN
+F 1 "VCC" H 3950 2100 50  0000 C CNN
+F 2 "" H 3950 1950 50  0001 C CNN
+F 3 "" H 3950 1950 50  0001 C CNN
+	1    3950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR08
+U 1 1 5A2B5DA8
+P 4200 1950
+F 0 "#PWR08" H 4200 1800 50  0001 C CNN
+F 1 "VCC" H 4200 2100 50  0000 C CNN
+F 2 "" H 4200 1950 50  0001 C CNN
+F 3 "" H 4200 1950 50  0001 C CNN
+	1    4200 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 4650 3450 4650
+Wire Wire Line
+	3450 4650 3450 5350
+Wire Wire Line
+	3700 2000 3700 1950
+Wire Wire Line
+	3950 1950 3950 2000
+Wire Wire Line
+	4200 1950 4200 2000
+Wire Wire Line
+	4200 2300 4200 2350
+Wire Wire Line
+	3950 2300 3950 2350
+Wire Wire Line
+	3700 2300 3700 2350
+Wire Wire Line
+	3350 4950 4000 4950
+Wire Wire Line
+	3350 6150 3950 6150
+Wire Wire Line
+	3350 6250 3950 6250
+Wire Wire Line
+	3350 6350 3950 6350
+$Comp
+L Conn_01x10 J25
+U 1 1 5A6A3D1E
+P 2250 4750
+F 0 "J25" H 2250 5250 50  0000 C CNN
+F 1 "Conn_01x10" H 2250 4150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 2250 4750 50  0001 C CNN
+F 3 "" H 2250 4750 50  0001 C CNN
+	1    2250 4750
+	-1   0    0    -1  
+$EndComp
+Text Label 3400 6350 0    60   ~ 0
+FPGA_AG13
+Text Label 3400 6250 0    60   ~ 0
+FPGA_AF13
+Text Label 3400 6150 0    60   ~ 0
+FPGA_AG10
+$Comp
+L Conn_01x10 J28
+U 1 1 5A69DE2E
+P 2250 6000
+F 0 "J28" H 2250 6500 50  0000 C CNN
+F 1 "Conn_01x10" H 2250 5400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 2250 6000 50  0001 C CNN
+F 3 "" H 2250 6000 50  0001 C CNN
+	1    2250 6000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 5A69E18E
+P 2550 6600
+F 0 "#PWR09" H 2550 6350 50  0001 C CNN
+F 1 "GND" H 2550 6450 50  0000 C CNN
+F 2 "" H 2550 6600 50  0001 C CNN
+F 3 "" H 2550 6600 50  0001 C CNN
+	1    2550 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 6500 2450 6500
+Wire Wire Line
+	2550 6200 2550 6600
+Wire Wire Line
+	2450 6400 2550 6400
+Connection ~ 2550 6500
+Wire Wire Line
+	2450 6300 2550 6300
+Connection ~ 2550 6400
+Wire Wire Line
+	2450 6200 2550 6200
+Connection ~ 2550 6300
+$Comp
+L VCC #PWR010
+U 1 1 5A6A18EA
+P 2650 5250
+F 0 "#PWR010" H 2650 5100 50  0001 C CNN
+F 1 "VCC" H 2650 5400 50  0000 C CNN
+F 2 "" H 2650 5250 50  0001 C CNN
+F 3 "" H 2650 5250 50  0001 C CNN
+	1    2650 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 5050 2550 5050
+Wire Wire Line
+	2550 5050 2550 5250
+Wire Wire Line
+	2450 5250 2650 5250
+Wire Wire Line
+	2450 5150 2550 5150
+Connection ~ 2550 5150
+Connection ~ 2550 5250
+Wire Wire Line
+	3350 4350 4000 4350
+Wire Wire Line
+	3350 4450 4000 4450
+Wire Wire Line
+	3350 4750 4000 4750
+Wire Wire Line
+	3350 4850 4000 4850
+Text Label 3400 4350 0    60   ~ 0
+FPGA_AG11
+Text Label 3400 4450 0    60   ~ 0
+FPGA_AH9
+Text Label 3500 4750 0    60   ~ 0
+FPGA_AH12
+Text Label 3500 4850 0    60   ~ 0
+FPGA_AH11
+Wire Wire Line
+	2450 4350 2950 4350
+Wire Wire Line
+	2450 4450 2950 4450
+Wire Wire Line
+	2450 4750 2950 4750
+Wire Wire Line
+	2450 4850 2950 4850
+Wire Wire Line
+	2450 4950 2950 4950
+Wire Wire Line
+	3350 5050 4000 5050
+Text Label 3500 4950 0    60   ~ 0
+FPGA_AG16
+Text Label 3500 5050 0    60   ~ 0
+OE__1
+Text Label 2500 4350 0    60   ~ 0
+FPGA_AG11
+Text Label 2500 4450 0    60   ~ 0
+FPGA_AH9
+$Comp
+L GND #PWR011
+U 1 1 5A69ECAC
+P 2550 4550
+F 0 "#PWR011" H 2550 4300 50  0001 C CNN
+F 1 "GND" H 2550 4400 50  0000 C CNN
+F 2 "" H 2550 4550 50  0001 C CNN
+F 3 "" H 2550 4550 50  0001 C CNN
+	1    2550 4550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2450 4650 2500 4650
+Wire Wire Line
+	2500 4650 2500 4550
+Wire Wire Line
+	2450 4550 2550 4550
+Connection ~ 2500 4550
+Text Label 2500 4750 0    60   ~ 0
+FPGA_AH12
+Text Label 2500 4850 0    60   ~ 0
+FPGA_AH11
+Text Label 2500 4950 0    60   ~ 0
+FPGA_AG16
+$Comp
+L Conn_01x01 J29
+U 1 1 5A7D9682
+P 6150 7700
+F 0 "J29" H 6150 7800 50  0000 C CNN
+F 1 "Conn_01x01" H 6150 7600 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_ISO7380_Pad" H 6150 7700 50  0001 C CNN
+F 3 "" H 6150 7700 50  0001 C CNN
+	1    6150 7700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 7700 5950 7700
+Wire Wire Line
+	5850 7800 5850 7700
+$EndSCHEMATC

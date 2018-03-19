@@ -596,7 +596,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 2100 8500 2450
 Connection ~ 8500 2300
-Text Label 9000 2750 0    60   ~ 0
+Text Label 8300 2750 0    60   ~ 0
 AVDD
 Text Label 6450 2450 0    60   ~ 0
 IRQ
@@ -1047,4 +1047,12 @@ Text Label 2800 2300 0    60   ~ 0
 FPGA_AE15
 Text Label 2800 2400 0    60   ~ 0
 FPGA_AF17
+Text Label 8300 2850 0    60   ~ 0
+MICBIAS
+Text Label 8300 2950 0    60   ~ 0
+REG
+Text Label 8300 3050 0    60   ~ 0
+PREG
+Text Label 8300 3150 0    60   ~ 0
+REF
 $EndSCHEMATC
